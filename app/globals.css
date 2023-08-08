@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+
+@layer components {
+  .borderStyle {
+    @apply border-tetiaryColor border-opacity-40;
+  }
+
+  .headingText {
+    @apply capitalize sm:text-[3.3rem] sm:leading-[4rem] text-[2.6rem] leading-[2.6rem] mb-7 sm:mb-4 font-medium text-white
+  }
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +34,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
