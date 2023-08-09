@@ -54,7 +54,7 @@ const Navbar = () => {
       </ul>
 
       {/* Pre Order btn */}
-      <button className="hidden sm:flex px-4 py-2 bg-blue-500 rounded-[5px]">
+      <button className="hidden  px-4 py-2 bg-blue-500 rounded-[5px]">
         Pre Order
       </button>
 

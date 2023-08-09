@@ -2,14 +2,18 @@
 
 import { Monoton } from "next/font/google";
 import Link from "next/link";
-import { content } from "../data/content";
 
-const monoton = Monoton({ subsets: ["latin"], weight: ["400"] });
+const monoton = Monoton({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-monoton",
+  display: "swap",
+});
 
 const Footer = () => {
   return (
-    <section
-      className="bg-slate-900 px-5 sm:px-[4rem] pt-20 relative w-full"
+    <footer
+      className="bg-slate-900 px-5 pt-10 sm:px-[4rem] relative w-full overflow-hidden"
       id="footer"
     >
       <div className="relative z-50">
@@ -165,7 +169,7 @@ const Footer = () => {
           </div>
 
           {/* subscribe to our news letter */}
-          <div className="w-fit mx-auto sm:mx-0">
+          {/* <div className="w-fit mx-auto sm:mx-0">
             <label htmlFor="">Subscribe to our News Letter</label>
             <div class="flex w-[17rem] mt-3">
               <input
@@ -178,11 +182,11 @@ const Footer = () => {
                 Email
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* amihub text */}
-    </section>
+    </footer>
   );
 };
 

@@ -12,7 +12,6 @@ const StoreProvider = ({ children }) => {
   });
 
   const toggleSideMenu = () => {
-    console.log("hjeejk");
     setDisplaySideMenu(!displaySideMenu);
   };
 
