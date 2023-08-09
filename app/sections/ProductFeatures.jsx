@@ -37,10 +37,20 @@ const ProductFeatures = () => {
       </div>
 
       {/* feature cards */}
-      <div className="mt-[4rem]">
+      <div className="mt-[4rem] relative">
         {/* background blur */}
-        <div class="text-center lg:w-2/3 w-full relative flex flex-col place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]"></div>
 
+        <div className="absolute inset-0 top-[4rem] mx-auto sm:w-[25rem] ] w-[20rem] ">
+          <div className="sm:h-[20rem] sm:w-[25rem] h-[19rem] w-[20rem] rounded-[5px]  relative overflow-hidden">
+            <Image
+              class="object-cover w-full h-full"
+              src="/Ellipse.png"
+              fill
+              alt=""
+              priority
+            />
+          </div>
+        </div>
         {/* features card */}
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 gap-3"

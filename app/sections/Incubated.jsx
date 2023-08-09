@@ -10,7 +10,7 @@ const Incubated = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="sm:w-[60.75rem] w-[20rem] py-9 mx-auto bg-secondaryColor rounded-[5px]"
+      className="sm:w-[60.75rem] w-[20rem] py-9 mx-auto bg-[#0F2334] rounded-[5px]"
     >
       <div className="flex sm:flex-row flex-col items-center w-fit mx-auto  ">
         <h1 className="text-2xl font-bold">Incubated By</h1>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Monoton } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 
 const monoton = Monoton({
@@ -107,11 +108,17 @@ const Footer = () => {
           </div>
         </div>
 
-        <h1
-          className={`absolute -top-10 text-[15.625rem] inset-0 m-auto w-fit text-white text-opacity-10 ${monoton.className} -z-10`}
+        <div
+          className={`absolute -top-10 text-[15.625rem] inset-0 m-auto  text-white text-opacity-10 -z-10 sm:h-[20rem] sm:w-[80%] h-[19rem] w-[20rem]`}
         >
-          amihub
-        </h1>
+          <Image
+            class="object-contain w-full h-full"
+            src="/amihub.png"
+            fill
+            alt=""
+            priority
+          />
+        </div>
 
         {/* second section */}
         <div className="flex justify-between pt-7 pb-10 border-t border-stone-400 sm:flex-row flex-col text-center space-y-6 sm:space-y-0">
