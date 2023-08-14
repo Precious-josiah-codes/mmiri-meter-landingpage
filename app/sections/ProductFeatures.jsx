@@ -15,9 +15,9 @@ const ProductFeatures = () => {
   return (
     <section className="mx-auto flex sm:px-5 pt-[10rem] pb-[3.5rem] items-center justify-center flex-col  text-center">
       {/* title and subtitle */}
-      <div className="sm:w-2/3">
+      <div className="sm:w-2/3 ">
         <motion.h1
-          className="headingText"
+          className="headingText sm:w-[50rem] sm:mx-auto"
           variants={animationOne}
           initial="hidden"
           whileInView="visible"
@@ -26,7 +26,7 @@ const ProductFeatures = () => {
           {features.title}
         </motion.h1>
         <motion.p
-          className="text-tetiaryColor"
+          className="text-tetiaryColor sm:w-[40rem] sm:mx-auto"
           variants={animationTwo}
           initial="hidden"
           whileInView="visible"

@@ -40,7 +40,7 @@ const Hero = () => {
 
         {/* main text */}
         <motion.h1
-          class="headingText "
+          className="headingText sm:w-[50rem] "
           variants={animationTwo}
           initial="hidden"
           animate="visible"
@@ -55,7 +55,7 @@ const Hero = () => {
               height={40}
               priority
             />
-            <span className="relative text-secondaryColor">
+            <span className="relative text-secondaryColor ">
               {hero.lineText}{" "}
             </span>
           </span>
@@ -63,7 +63,7 @@ const Hero = () => {
 
         {/* sub text */}
         <motion.p
-          class="leading-relaxed mb-8 secondary-color "
+          class="leading-relaxed mt-8 secondary-color sm:w-[40rem]"
           variants={animationThree}
           initial="hidden"
           animate="visible"
